@@ -1,0 +1,45 @@
+.box {
+  margin-bottom: 18px;
+  border: 1px solid #474444;
+  border-radius: 14px;
+}
+
+.dateBox {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 34px;
+  border-bottom: 1px solid #A19A9A;
+}
+.date {
+  font-size: 15px;
+}
+
+.daysBox {
+  padding: 12px 40px;
+  display: flex;
+  gap: 40px;
+  flex-flow: wrap row;
+  max-height: 330px;
+  overflow: auto;
+}
+
+.arrowBox {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-right: 40px;
+}
+.arrow {
+
+}
+
+@media (min-width: 1025px) {
+  .daysBox {
+    gap: 60px;
+  }
+  .daysBox {
+    max-height: 400px;
+  }
+}

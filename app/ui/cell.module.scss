@@ -1,0 +1,33 @@
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 6px;
+  background: #9c9c9c;
+  color: #eaeaea;
+}
+
+@media (min-width: 400px) {
+  .cell {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cell {
+    height: 43px;
+    width: 43px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cell {
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+  }
+}
