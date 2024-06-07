@@ -1,6 +1,7 @@
 import styles from './summary.module.scss'
 
 export default function Summary() {
+  
   return (
     <ul className={styles.list}>
       <li className={styles.item}>
