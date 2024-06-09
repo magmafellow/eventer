@@ -1,0 +1,119 @@
+
+.inputTitle {
+  font-size: 18px;
+  color: #222;
+  padding: 8px;
+  outline: none;
+  border: 1px solid gray;
+
+  &:focus {
+    border: 1px solid #235af1;
+    outline: 1px solid #7395f4;
+  }
+}
+
+
+.titleOuterWrapper {
+  margin-bottom: 20px;
+}
+.titleLabel {
+  font-size: 14px;
+  color: #474444;
+}
+.titleLabelBox {
+  text-align: center;
+}
+.inputTitleBox {
+  text-align: center;
+}
+.contentLabelBox {
+  text-align: center;
+}
+.contentLabel {
+  font-size: 14px;
+  color: #474444;
+}
+.contentOuterWrapper {
+  margin-bottom: 20px;
+}
+.textareaContentBox{
+  text-align: center;
+}
+.textareaContent{
+  font-size: 14px;
+  color: #474444;
+  padding: 15px;
+  width: 87%;
+  border: 1px solid gray;
+
+  &:focus {
+    border: 1px solid #606060;
+    outline: 2px solid #73daf4;
+  }
+}
+
+
+.admitBox {
+  text-align: center;
+  margin-bottom: 10px;
+
+
+}
+.admit {
+  width: 180px;
+  height: 43px;
+  background-color: #A5F2A3;
+  border-radius: 20px;
+  color: #2B5E0C;
+  transition: 0.23s;
+  font-weight: 700;
+
+  &:hover {
+    background-image: linear-gradient(90deg, rgba(104,179,86,1) 0%, rgba(21,70,5,1) 100%);
+    color: #a8e9a6;
+  }
+  &:active {
+    transition: .157s;
+    outline: 2.5px solid #9fdf9d; 
+    transform: scale(1.07);
+    background: linear-gradient(90deg, rgba(69,134,53,1) 0%, rgba(99,145,84,1) 100%);
+  }
+}
+
+@media (max-width: 500px) {
+  .inputTitle {
+    width: 95%;
+  }
+}
+
+
+@media (min-width: 530px) {
+  .inputTitle {
+    font-size: 20px;
+  }
+}
+@media (min-width: 640px) {
+  .inputTitle {
+    font-size: 21px;
+  }
+  .textareaContent {
+    font-size: 16px;
+  }
+}
+@media (min-width: 800px) {
+  .inputTitle {
+    font-size: 22px;
+  }
+  .textareaContent {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) {
+  .inputTitle {
+    font-size: 24px;
+  }
+  .textareaContent {
+    font-size: 18px;
+  }
+}
+

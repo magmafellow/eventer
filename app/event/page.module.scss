@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentBox {
+  padding: 0 20px;
+  order: 1;
+  max-width: 739px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.sidebarBox {
+  order: 2;
+}
+
+.logotype {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 47px;
+  padding-left: 25px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.upperBox {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 14px;
+}
+
+.bottomBox {
+  border-radius: 10px;
+  background-color: #e6e6e6;
+  padding: 10px 12px;
+}
+
+@media (min-width: 676px) {
+  .upperBox {
+    flex-flow: row nowrap;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    flex-direction: row;
+    padding-left: 40px;
+  }
+  .contentBox {
+    order: 2;
+    flex: 1 1 auto;
+    max-width: 850px;
+  }
+  .sidebarBox {
+    order: 1;
+    flex: 0 1 200px;
+  }
+  .logotype {
+    height: 100px;
+    padding-left: 25px;
+    font-size: 26px;
+    padding-left: 50px;
+  }
+
+  .upperBox {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .logotype {
+    max-width: 1240px;
+    height: 140px;
+    font-size: 32px;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 15px;
+}
+.content {
+  font-size: 16px;
+  color: #474444;
+  margin-bottom: 15px;
+  letter-spacing: 0.05888em;
+
+  &:first-letter {
+    padding-left: 17px;
+  }
+}
+.timeBox {
+  text-align: end;
+  margin-bottom: 20px;
+
+  & > p:first-child {
+    margin-bottom: 5px;
+  }
+}
+.clock {
+  color: #a19a9a;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+.tagsBox {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.liTag {
+  background: #beedb3;
+  color: #477d25;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+
+.importanceLabel {
+}
+.importanceValue {
+  border-radius: 6px;
+  padding: 3px 6px;
+  background: #2f2d2d;
+  color: #f05b5b;
+  font-weight: 700;
+}
+.date {
+  font-size: 14px;
+}
+
+
+@media (min-width: 1025px) {
+  .tagsLabel {
+    font-size: 17px;
+  }
+  .importanceLabel {
+    font-size: 18px;
+  }
+  .litag, .importanceValue {
+    padding: 6px 12px;
+  }
+}
