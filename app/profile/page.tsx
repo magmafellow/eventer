@@ -89,6 +89,9 @@ export default function Page() {
                 </li>
               </ul>
             </div>
+            <div className='text-center'>
+              <Link href="/profile/edit" className={styles.editBtn}>edit</Link>
+            </div>
           </div>
         </div>
       </div>

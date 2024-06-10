@@ -110,6 +110,30 @@
   top: 12px;
 }
 
+.editBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 43px;
+  background-color: #a3d4f2;
+  border-radius: 20px;
+  color: #0c315e;
+  transition: 0.23s;
+  font-weight: 700;
+
+  &:hover {
+    background-image: linear-gradient(90deg, rgb(86, 123, 179) 0%, rgb(5, 42, 70) 100%);
+    color: #a6cee9;
+  }
+  &:active {
+    transition: .157s;
+    outline: 2.5px solid #9db4df; 
+    transform: scale(1.07);
+    background: linear-gradient(90deg, rgb(53, 75, 134) 0%, rgb(84, 110, 145) 100%);
+  }
+}
+
 
 @media (min-width: 676px) {
   .upperBox {
