@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { robotoMono } from "./ui/fonts";
 import "./globals.css";
+import "./animate.css"
 
 export const metadata: Metadata = {
   title: "Eventer App",

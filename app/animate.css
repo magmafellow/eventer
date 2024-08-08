@@ -1,0 +1,63 @@
+/* Utility classes */
+
+.animate--slow {
+  animation-duration: 2s;
+}
+.animate--fast {
+  animation-duration: 0.5s;
+}
+
+.animate--infinite {
+  animation-iteration-count: infinite;
+}
+
+.balls-box-01 {
+}
+
+.balls-box {
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.balls-box.jump {
+  display: block;
+}
+.balls-box.jump .ball-01 {
+  top: 0;
+  bottom: 0;
+  animation-name: jump_01;
+}
+
+@keyframes jump_01 {
+  0% {
+    /* transform: translate(x, y) */
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5px, 2.5px);
+  }
+  20% {
+    transform: translate(-10px, 5px);
+  }
+  30% {
+    transform: translate(-17px, 7px);
+  }
+  100% {
+    transform: translate(-45px, 20px);
+  }
+}
+
+@keyframes jump_01 {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes jump_01 {
+  0% {
+  }
+  100% {
+  }
+}

@@ -24,20 +24,31 @@
   flex: 0 0 47%;
   font-size: 14px;
   background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgb(165, 165, 165);
   border-radius: 16px;
   transition: 0.3s;
 }
+.li-settings {
+  flex: 0 0 47%;
+  font-size: 14px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
 .liActive {
   background: rgba(233, 51, 127, 0.68);
   color: #ffc6db;
+  border: 1px solid rgb(236, 153, 187);
 }
 .li.liActive:hover {
   background: rgba(137, 29, 173, 0.68);
   color: #f2c6ff;
+  border: 1px solid rgba(137, 29, 173, 0.3);
 }
 .li:hover {
   background: rgba(124, 51, 233, 0.68);
   color: #d5c6ff;
+  border: 1px solid rgb(171, 125, 239);
 }
 
 .icon {
