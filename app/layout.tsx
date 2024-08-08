@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { robotoMono } from "./ui/fonts";
+import Providers from './ui/provider'
 import "./globals.css";
 import "./animate.css"
 
@@ -14,8 +15,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={robotoMono.className}>{children}</body>
+    <html className='' lang="en" suppressHydrationWarning={true}>
+      <head>
+        <meta
+          name="format-detection"
+          content="telephone=no, date=no, email=no, address=no"
+        />
+      </head>
+      <Providers>
+        <body className={robotoMono.className}>{children}</body>
+      </Providers>
     </html>
   );
 }

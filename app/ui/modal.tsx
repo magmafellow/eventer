@@ -66,7 +66,7 @@ export default function Modal({
       id={id}
       className="modal-wrapper justify-center items-center w-screen h-screen bg-black bg-opacity-30 fixed top-0 left-0 z-50"
     >
-      <div className="modal-box px-4 relative min-w-[250px] max-w-[500px] w-[90%] h-[70%] sm:w-[55%] rounded bg-white">
+      <div className="modal-box dark:text-blue-100 px-4 relative min-w-[250px] max-w-[500px] w-[90%] h-[70%] sm:w-[55%] rounded-xl bg-white dark:bg-slate-700">
         {title && <h2 className='text-center py-8 text-xl'>{title}</h2>}
         {text && (
           <div>
