@@ -11,6 +11,12 @@
     outline: 1px solid #7395f4;
   }
 }
+html[style="color-scheme: dark;"] .inputTitle {
+  color: #ccc;
+  &:focus {
+    color: #b7c9fc;
+  }
+}
 
 
 .titleOuterWrapper {
@@ -20,19 +26,29 @@
   font-size: 14px;
   color: #474444;
 }
+html[style="color-scheme: dark;"] .titleLabel {
+  color: #888;
+}
+
 .titleLabelBox {
   text-align: center;
+  margin-bottom: 2px;
 }
 .inputTitleBox {
   text-align: center;
 }
 .contentLabelBox {
   text-align: center;
+  margin-bottom: 4px;
 }
 .contentLabel {
   font-size: 14px;
   color: #474444;
 }
+html[style="color-scheme: dark;"] .contentLabel {
+  color: #888;
+}
+
 .contentOuterWrapper {
   margin-bottom: 20px;
 }
@@ -49,6 +65,13 @@
   &:focus {
     border: 1px solid #606060;
     outline: 2px solid #73daf4;
+  }
+}
+
+html[style="color-scheme: dark;"] .textareaContent {
+  color: #bbb;
+  &:focus {
+    color: #73daf49c;
   }
 }
 
@@ -76,6 +99,9 @@
     transform: scale(1.07);
     background: linear-gradient(90deg, rgba(69,134,53,1) 0%, rgba(99,145,84,1) 100%);
   }
+}
+html[style="color-scheme: dark;"] .admit {
+  background-color: rgb(101, 196, 98);
 }
 
 @media (max-width: 500px) {

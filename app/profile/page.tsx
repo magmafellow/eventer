@@ -13,9 +13,9 @@ export default function Page() {
         <div className={styles.contentBox}>
           {/* upper box for profile logo and profile info */}
           <div className={styles.upperBox}>
-            <div className={styles.profileLogo}>
+            <div className={`${styles.profileLogo} dark:outline dark:outline-slate-300`}>
               <img
-                className={styles.profileLogoImg}
+                className={`${styles.profileLogoImg}`}
                 src="/me-bycicle.jpg"
                 alt="me photo"
               />

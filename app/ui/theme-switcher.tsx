@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
+import { BiSolidSun } from 'react-icons/bi'
+import { PiMoonBold } from "react-icons/pi"
+
 
 const ThemeSwitcher = () => {
 	const [mounted, setMounted] = useState(false);
@@ -16,12 +19,8 @@ const ThemeSwitcher = () => {
 	}
 
 	return (
-		<div className="bg-background text-primary-green">
-			The current theme is: {theme}
-			<br />
-			<button onClick={() => setTheme('light')}>Light Mode</button>
-			<br />
-			<button onClick={() => setTheme('dark')}>Dark Mode</button>
+		<div className="flex justify-center items-center">
+			<button className='text-2xl' onClick={() => {setTheme(theme === 'dark' ? 'light' : 'dark')}}>{ theme === 'dark' ? <BiSolidSun /> : <PiMoonBold />  }</button>
 		</div>
 	);
 };

@@ -55,6 +55,10 @@
   color: #606060;
   font-size: 14px;
 }
+html[style="color-scheme: dark;"] .infoLabel {
+  color: #b2b2b2;
+}
+
 .infoDelemiter {
   display: inline-block;
   margin: 0 5px;
@@ -80,15 +84,25 @@
   margin-bottom: 20px;
 }
 
+html[style="color-scheme: dark;"] .bottomBox {
+  background-color: #1f1f1f;
+}
+
 .infoTitle {
   color: #474444;
-  
 }
+html[style="color-scheme: dark;"] .infoTitle {
+  color: #ddd;
+}
+
 .infoPContainer {
   max-width: 730px;
 }
 .infoP {
   color: #222;
+}
+html[style="color-scheme: dark;"] .infoP {
+  color: #ddd;
 }
 
 .infoUl {
@@ -99,15 +113,22 @@
   padding-left: 16px;
   margin-bottom: 4px;
 }
+html[style="color-scheme: dark;"] .infoLi {
+  color: rgb(176, 176, 255);
+}
+
 .infoLi::after {
   content: '';
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   border-radius: 10px;
   background-color: #111;
   position: absolute;
   left: 4px;
   top: 12px;
+}
+html[style="color-scheme: dark;"] .infoLi::after {
+  background-color: rgb(140, 140, 140);
 }
 
 .editBtn {
@@ -132,6 +153,9 @@
     transform: scale(1.07);
     background: linear-gradient(90deg, rgb(53, 75, 134) 0%, rgb(84, 110, 145) 100%);
   }
+}
+html[style="color-scheme: dark;"] .editBtn {
+  background-color: #7eb4d5;
 }
 
 

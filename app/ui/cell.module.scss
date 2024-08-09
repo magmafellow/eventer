@@ -8,11 +8,20 @@
   background: #9c9c9c;
   color: #eaeaea;
 }
+html[style="color-scheme: dark;"] .cell {
+  background: #444;
+  // border: 1px solid #666;
+}
 
 .today {
   background: rgba(0, 0, 0, .09);
   border: 2px solid #2222227e;
   color: #222;
+}
+html[style="color-scheme: dark;"] .today {
+  background: #333;
+  border: 2px solid rgba(124, 123, 170, 0.552);
+  color: rgb(124, 124, 170);
 }
 
 @media (min-width: 400px) {

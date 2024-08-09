@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Page() {
   return (
-    <div className='dark:bg-[#0f0f0e]'>
+    <div className='dark:bg-[#101010]'>
       <h2 className={styles.logotype}><Link className="logo-link" href='/'>Eventer</Link></h2>
       <div className={styles.container}>
         <div className={styles.sidebarBox}>
