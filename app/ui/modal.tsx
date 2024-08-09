@@ -59,6 +59,16 @@ export default function Modal({
         modalTurnOff(id)
       }
     })
+
+    window.addEventListener('keydown', function (e) {
+      if (
+        modalWrapper?.classList.contains('active') &&
+        doesParentHaveElem(e.target, modalBox) && (e.key === 'Escape' || e.key === 'q')
+      ) {
+        console.log('close modal')
+        modalTurnOff(id)
+      }
+    })
   }, [])
 
   return (

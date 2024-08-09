@@ -61,3 +61,25 @@
       margin: 0 auto;
     }
   }
+
+
+// animations
+
+.signup-pulse {
+  width: 20px;
+  height: 20px;
+
+  animation: pulse 1s ease 0s infinite alternate both;
+}
+
+
+@keyframes pulse {
+  0% {
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    width: 26px;
+    height: 26px;
+  }
+}
