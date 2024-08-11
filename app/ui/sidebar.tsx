@@ -15,6 +15,7 @@ import { CgProfile } from "react-icons/cg";
 import { LuPencil } from "react-icons/lu";
 import { CgMenuGridO } from "react-icons/cg";
 import { FaQuestion } from "react-icons/fa";
+import { logout } from '../lib/actions'
 
 
 export default function Sidebar() {
@@ -32,7 +33,8 @@ export default function Sidebar() {
           <p className='text-lg'>You are logged in as <span className='dark:text-zinc-400 text-zinc-700 bg-zinc-100 dark:bg-zinc-800 py-0.5 px-2 rounded-md border border-slate-300 dark:border-slate-400'>mazda</span></p>
         </div>
         <div>
-          <button className='text-indigo-600 bg-indigo-200 border-indigo-400 hover:bg-indigo-100 dark:text-indigo-300 border dark:hover:bg-indigo-950 dark:border-indigo-400 dark:bg-indigo-800 py-0.5 px-1 rounded'>log out</button>
+          <button className='text-indigo-600 bg-indigo-200 border-indigo-400 hover:bg-indigo-100 dark:text-indigo-300 border dark:hover:bg-indigo-950 dark:border-indigo-400 dark:bg-indigo-800 py-0.5 px-1 rounded'
+          onClick={() => logout()}>log out</button>
         </div>
       </Modal>
       

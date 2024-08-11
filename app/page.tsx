@@ -3,8 +3,12 @@ import Sidebar from '@/app/ui/sidebar'
 import Summary from '@/app/ui/summary'
 import styles from './page.module.scss'
 import Link from 'next/link'
+import { auth } from '@/auth'
 
-export default function Page() {
+export default async function Page() {
+  const session = await auth()
+  console.log(session?.user)
+  
   return (
     <div className='dark:bg-[#101010]'>
       <h2 className={styles.logotype}><Link className="logo-link" href='/'>Eventer</Link></h2>

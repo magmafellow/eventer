@@ -8,6 +8,7 @@ import Calendar from '@/app/ui/calendar'
 import { useState } from 'react'
 import clsx from 'clsx'
 import LoginForm from '@/app/ui/login/login-form'
+import SignupForm from '../ui/login/signup-form'
 
 export default function Page() {
   const [formMode, setFormMode] = useState('signup')
@@ -59,6 +60,12 @@ export default function Page() {
             'hidden': formMode === 'signup'
           })}>
             <LoginForm />
+          </div>
+
+          <div className={clsx({
+            'hidden': formMode === 'login'
+          })}>
+              <SignupForm />
           </div>
         </div>
       </div>

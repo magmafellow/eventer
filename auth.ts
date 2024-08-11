@@ -31,10 +31,10 @@ async function getUserById(id: string): Promise<any | undefined> {
 
 async function getUserByPseudonim(pseudonim: string): Promise<any | undefined> {
   try {
-    const user = await pool.query(`SELECT * FROM users WHERE pseudonim=$1`, [
+    const users = await pool.query(`SELECT * FROM person WHERE pseudonim=$1`, [
       pseudonim,
     ])
-    return user.rows[0]
+    return users.rows[0]
   } catch (error) {
     console.error('Failed to fetch user:', error)
     throw new Error('Failed to fetch user.')
@@ -47,7 +47,7 @@ export const { auth, signIn, signOut } = NextAuth({
     Credentials({
       async authorize(credentials) {
         const parsedCredentials = z
-          .object({ pseudonim: z.string().min(3), password: z.string().min(6) })
+          .object({ pseudonim: z.string().min(3), password: z.string().min(4) })
           .safeParse(credentials)
 
         if (parsedCredentials.success) {
@@ -57,6 +57,7 @@ export const { auth, signIn, signOut } = NextAuth({
           // const passwordsMatch = await bcrypt.compare(password, user.password)
           const passwordsMatch = password === user.password
 
+          console.log(user)
           if (passwordsMatch) return user
         }
 

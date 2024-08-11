@@ -14,7 +14,7 @@ const configForDataBase = {
 
 // for local development
 const configForTable = {
-  database: 'direct_chat',
+  database: 'eventer',
   user: 'postgres',
   host: 'localhost',
   port: 5432,

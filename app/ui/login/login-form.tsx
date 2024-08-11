@@ -41,7 +41,7 @@ export default function LoginForm() {
           />
         </div>
         <div className='pl-2'>
-          <button className='inline-flex jusitfy-center items-center py-1 px-2 rounded-lg bg-blue-700 gap-2'>login<MdArrowForwardIos className='text-lg' /></button>
+          <button type="submit" className='inline-flex jusitfy-center items-center py-1 px-2 rounded-lg bg-blue-700 gap-2'>login<MdArrowForwardIos className='text-lg' /></button>
         </div>
       </div>
     </form>
